@@ -1,3 +1,5 @@
+import { Modal } from './modal.js'
+
 // -- variables --
 
 const form = document.querySelector('form')
