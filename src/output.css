@@ -612,6 +612,10 @@ video {
   margin-top: 1.25rem;
 }
 
+.ml-1 {
+  margin-left: 0.25rem;
+}
+
 .flex {
   display: flex;
 }
@@ -675,6 +679,11 @@ video {
   padding-bottom: 2rem;
 }
 
+.py-36 {
+  padding-top: 9rem;
+  padding-bottom: 9rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -693,6 +702,11 @@ video {
   line-height: 1.5rem;
 }
 
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
 .font-semibold {
   font-weight: 600;
 }
@@ -700,6 +714,16 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-neutral-600 {
+  --tw-text-opacity: 1;
+  color: rgb(82 82 82 / var(--tw-text-opacity));
+}
+
+.text-neutral-800 {
+  --tw-text-opacity: 1;
+  color: rgb(38 38 38 / var(--tw-text-opacity));
 }
 
 .bg {
@@ -878,4 +902,8 @@ video {
   transition-property: transform;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
+}
+
+.hover\:underline:hover {
+  text-decoration-line: underline;
 }
