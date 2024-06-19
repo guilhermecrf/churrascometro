@@ -1,3 +1,53 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+.bg {
+    @apply absolute inset-0 -z-10 h-full w-full bg-gray-50 bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:6rem_4rem]
+}
+
+.nav-link {
+    @apply h-6 w-6 text-stone-900 transition-colors hover:text-neutral-600
+}
+
+.card-container {
+    @apply bg-gray-950/95 flex gap-5 w-full max-w-5xl p-3 rounded-lg border-2 border-gray-800/80 shadow-lg
+}
+
+.header-gradient {
+    @apply bg-gradient-to-t from-[#c7d2fe] to-[#8678f9] bg-clip-text text-transparent
+}
+
+.label-style {
+    @apply block mb-1 text-sm font-medium text-slate-100/90
+}
+
+.input-style {
+    @apply block h-10 w-72 rounded-md border border-gray-800 bg-gray-950 px-3 py-2 mb-5 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 focus:ring-offset-gray-50
+}
+
+.button {
+    @apply inline-flex h-10 w-28 items-center justify-center rounded-md border border-gray-800 bg-gradient-to-r from-gray-100 via-[#c7d2fe] to-[#8678f9] bg-[length:200%_200%] bg-[0%_0%] px-6 font-medium text-gray-950 duration-500 hover:bg-[100%_200%] focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 focus:ring-offset-gray-50
+}
+
+.modal-result {
+    @apply bg-neutral-950/70 absolute grid place-content-center inset-0 invisible opacity-0
+}
+
+.modal-result.open {
+    @apply visible opacity-100
+}
+
+.modal {
+    @apply relative
+}
+
+.card {
+    @apply bg-white py-12 px-20 max-w-md rounded-lg shadow-md
+}
+
+.modal-close {
+    @apply bg-none border-none absolute top-6 right-6 transition-transform
+}
