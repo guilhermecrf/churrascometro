@@ -600,6 +600,10 @@ video {
   margin-left: 5rem;
 }
 
+.ml-5 {
+  margin-left: 1.25rem;
+}
+
 .flex {
   display: flex;
 }
