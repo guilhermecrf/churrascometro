@@ -15,6 +15,8 @@
     />
 
     <link rel="stylesheet" href="src/output.css">
+
+    <script src="src/js/main.js" defer type="module"></script>
 </head>
 
 <body class="font-Inter">
@@ -129,7 +131,23 @@
                 class="
                 ml-1 text-neutral-800 hover:underline" 
                 href="https://github.com/guilhermecrf" target="_blank">@guilhermecrf</a>
-        </span>
-    </footer>
+            </span>
+        </footer>
+
+    <!-- modal w/js -->
+    <div class="modal-result">
+        <div class="modal card">
+            <h2 class="text-neutral-900 text-center text-2xl font-semibold">Cálculo</h2>
+    
+            <button class="modal-close hover:scale-110" type="button">
+                <img id="close"
+                src="/src/assets/close.svg" alt="an close 'x' button" />
+            </button>
+        
+            <p class="text-neutral-900 text-center font-medium mt-2" id="change">
+                Precisará de 1kg de Carne
+            </p>
+        </div>
+    </div>
 </body>
 </html>
